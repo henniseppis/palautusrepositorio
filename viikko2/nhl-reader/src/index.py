@@ -1,4 +1,3 @@
-import requests
 from player_reader import PlayerReader
 from player_stats import PlayerStats
 
