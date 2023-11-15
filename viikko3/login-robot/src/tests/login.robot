@@ -8,12 +8,12 @@ Login With Correct Credentials
     Output Should Contain  Logged in
 
 Login With Incorrect Password
-    Input Credentials  wrong  jee
+    Input Credentials  kalle  jee
     Output Should Contain  Invalid username or password
 
 
 Login With Nonexistent Username
-    Input Credentials  wrong  jee
+    Input Credentials  wrong  kalle123
     Output Should Contain  Invalid username or password
 
 
