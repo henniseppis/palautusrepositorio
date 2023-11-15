@@ -8,7 +8,6 @@ class UserInputError(Exception):
 class AuthenticationError(Exception):
     pass
 
-
 class UserService:
     def __init__(self, user_repository):
         self._user_repository = user_repository
