@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.12 on linux)" generated="20231115 17:41:32.851" rpa="false" schemaversion="4">
+<suite id="s1" name="Tests" source="/home/hennisep/ohtu2023/palautusrepositorio/viikko3/hello-robot/src/tests">
+<suite id="s1-s1" name="Increase Counter" source="/home/hennisep/ohtu2023/palautusrepositorio/viikko3/hello-robot/src/tests/increase_counter.robot">
+<test id="s1-s1-t1" name="Increase Counter Once" line="5">
+<kw name="Counter Value Should Be" library="CounterLibrary">
+<arg>0</arg>
+<status status="PASS" starttime="20231115 17:41:32.870" endtime="20231115 17:41:32.870"/>
+</kw>
+<kw name="Increase Counter" library="CounterLibrary">
+<status status="PASS" starttime="20231115 17:41:32.870" endtime="20231115 17:41:32.870"/>
+</kw>
+<kw name="Counter Value Should Be" library="CounterLibrary">
+<arg>1</arg>
+<status status="PASS" starttime="20231115 17:41:32.870" endtime="20231115 17:41:32.870"/>
+</kw>
+<status status="PASS" starttime="20231115 17:41:32.869" endtime="20231115 17:41:32.870"/>
+</test>
+<test id="s1-s1-t2" name="Increase Counter Many Times" line="10">
+<kw name="Counter Value Should Be" library="CounterLibrary">
+<arg>0</arg>
+<status status="PASS" starttime="20231115 17:41:32.871" endtime="20231115 17:41:32.871"/>
+</kw>
+<kw name="Increase Counter" library="CounterLibrary">
+<status status="PASS" starttime="20231115 17:41:32.871" endtime="20231115 17:41:32.871"/>
+</kw>
+<kw name="Increase Counter" library="CounterLibrary">
+<status status="PASS" starttime="20231115 17:41:32.871" endtime="20231115 17:41:32.871"/>
+</kw>
+<kw name="Increase Counter" library="CounterLibrary">
+<status status="PASS" starttime="20231115 17:41:32.871" endtime="20231115 17:41:32.871"/>
+</kw>
+<kw name="Counter Value Should Be" library="CounterLibrary">
+<arg>3</arg>
+<status status="PASS" starttime="20231115 17:41:32.871" endtime="20231115 17:41:32.872"/>
+</kw>
+<status status="PASS" starttime="20231115 17:41:32.871" endtime="20231115 17:41:32.872"/>
+</test>
+<test id="s1-s1-t3" name="Increment Counter By Amount" line="17">
+<kw name="Counter Value Should Be" library="CounterLibrary">
+<arg>0</arg>
+<status status="PASS" starttime="20231115 17:41:32.872" endtime="20231115 17:41:32.872"/>
+</kw>
+<kw name="Increment Counter By" library="CounterLibrary">
+<arg>5</arg>
+<status status="PASS" starttime="20231115 17:41:32.872" endtime="20231115 17:41:32.872"/>
+</kw>
+<kw name="Counter Value Should Be" library="CounterLibrary">
+<arg>5</arg>
+<status status="PASS" starttime="20231115 17:41:32.872" endtime="20231115 17:41:32.872"/>
+</kw>
+<status status="PASS" starttime="20231115 17:41:32.872" endtime="20231115 17:41:32.872"/>
+</test>
+<status status="PASS" starttime="20231115 17:41:32.866" endtime="20231115 17:41:32.873"/>
+</suite>
+<suite id="s1-s2" name="Reset Counter" source="/home/hennisep/ohtu2023/palautusrepositorio/viikko3/hello-robot/src/tests/reset_counter.robot">
+<test id="s1-s2-t1" name="Reset Counter After One Increment" line="5">
+<kw name="Counter Value Should Be" library="CounterLibrary">
+<arg>0</arg>
+<status status="PASS" starttime="20231115 17:41:32.875" endtime="20231115 17:41:32.875"/>
+</kw>
+<kw name="Increase Counter" library="CounterLibrary">
+<status status="PASS" starttime="20231115 17:41:32.875" endtime="20231115 17:41:32.875"/>
+</kw>
+<kw name="Counter Value Should Be" library="CounterLibrary">
+<arg>1</arg>
+<status status="PASS" starttime="20231115 17:41:32.875" endtime="20231115 17:41:32.875"/>
+</kw>
+<kw name="Reset Counter" library="CounterLibrary">
+<status status="PASS" starttime="20231115 17:41:32.875" endtime="20231115 17:41:32.875"/>
+</kw>
+<kw name="Counter Value Should Be" library="CounterLibrary">
+<arg>0</arg>
+<status status="PASS" starttime="20231115 17:41:32.875" endtime="20231115 17:41:32.876"/>
+</kw>
+<status status="PASS" starttime="20231115 17:41:32.874" endtime="20231115 17:41:32.876"/>
+</test>
+<test id="s1-s2-t2" name="Reset Counter After Several Increments" line="12">
+<kw name="Counter Value Should Be" library="CounterLibrary">
+<arg>0</arg>
+<status status="PASS" starttime="20231115 17:41:32.876" endtime="20231115 17:41:32.876"/>
+</kw>
+<kw name="Increment Counter By" library="CounterLibrary">
+<arg>5</arg>
+<status status="PASS" starttime="20231115 17:41:32.876" endtime="20231115 17:41:32.876"/>
+</kw>
+<kw name="Counter Value Should Be" library="CounterLibrary">
+<arg>5</arg>
+<status status="PASS" starttime="20231115 17:41:32.876" endtime="20231115 17:41:32.876"/>
+</kw>
+<kw name="Reset Counter" library="CounterLibrary">
+<status status="PASS" starttime="20231115 17:41:32.876" endtime="20231115 17:41:32.876"/>
+</kw>
+<kw name="Counter Value Should Be" library="CounterLibrary">
+<arg>0</arg>
+<status status="PASS" starttime="20231115 17:41:32.877" endtime="20231115 17:41:32.877"/>
+</kw>
+<status status="PASS" starttime="20231115 17:41:32.876" endtime="20231115 17:41:32.877"/>
+</test>
+<status status="PASS" starttime="20231115 17:41:32.873" endtime="20231115 17:41:32.877"/>
+</suite>
+<status status="PASS" starttime="20231115 17:41:32.852" endtime="20231115 17:41:32.877"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Increase Counter">Tests.Increase Counter</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s2" name="Reset Counter">Tests.Reset Counter</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
