@@ -8,11 +8,16 @@ class UserInputError(Exception):
 class AuthenticationError(Exception):
     pass
 
+import sys, pdb
+
 class UserService:
     def __init__(self, user_repository):
         self._user_repository = user_repository
 
     def check_credentials(self, username, password):
+    
+        pdb.Pdb(stdout=sys.__stdout__).set_trace()
+        
         if not username or not password:
             raise UserInputError("Username and password are required")
 
