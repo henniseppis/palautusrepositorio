@@ -1,6 +1,5 @@
 *** Settings ***
 Library  ../AppLibrary.py
-Library  ..services/user_service.py
 
 *** Keywords ***
 Input Login Command
