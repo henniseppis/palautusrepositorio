@@ -1,3 +1,15 @@
+class QueryBuilder:
+    def __init__(self, *matchers):
+        self._matchers = matchers
+
+    def build(self):
+        return True
+    
+    def playsIn(self, team):
+        return QueryBuilder((self._matchers, (PlaysIn(team))))
+
+
+
 class And:
     def __init__(self, *matchers):
         self._matchers = matchers
@@ -33,7 +45,7 @@ class All:
 
     def test(self, player):
         return True
-
+    
 class Not:
     def __init__(self, *matchers):
         self._matchers = matchers
